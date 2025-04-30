@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my brand</title>
+    <style>
+        body {
+            background-color: #B39684;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-image: url('image/3.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .block {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .block img {
+            width: 100%;
+            height: auto;
+        }
+        .block p {
+            padding: 10px;
+            background: #F5EFEB;
+            font-size: 1em;
+        }
+        .highlight {
+            color: #900C3F;
+            font-size: 1.2em;
+        }
+        @media (max-width: 768px) {
+            .block {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>my brand</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">нова колекція</a></li>
+                <li><a href="#">каталог</a></li>
+                <li><a href="#">новини</a></li>
+                <li><a href="#">пошук</a></li>
+                <li><a href="#">відгуки</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="block">
+            <img src="image/4.jpg" alt="Image 1">
+            <p>"перетворюючи старе на нове, ми <span class="highlight">створюємо</span> майбутнє моди та нашої планети."</p>
+        </div>
+        <div class="block">
+            <img src="image/5.jpg" alt="Image 2">
+            <p>Наш бренд поєднує любов до моди та <span class="highlight">турботу</span> про планету. Ми створили платформу, яка пропонує унікальні речі для <span class="highlight">свідомих</span> споживачів, з акцентом на перероблений одяг та одяг вищого класу.</p>
+        </div>
+        <div class="block">
+            <img src="image/6.jpg" alt="Image 3">
+            <p>Цей бренд сприяє створенню спільноти людей, які цінують моду і <span class="highlight">навколишнє середовище</span>, поєднуючи стиль і свідомість в одному місці.</p>
+        </div>
+    </div>
+</body>
+</html>
